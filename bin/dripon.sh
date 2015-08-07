@@ -1,0 +1,1 @@
+nohup ~/bin/drip.sh > /dev/null &
