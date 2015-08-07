@@ -141,38 +141,38 @@ function installcask() {
 
 # anybar - https://github.com/tonsky/AnyBar
 function anybar {
-        echo -n $1 | nc -4u -w0 localhost ${2:-1738};
+	echo -n $1 | nc -4u -w0 localhost ${2:-1738};
 }
 
 # lmk
 function lmk() {
-  eval $*
-  osascript -e "display notification \"$*\" with title \"$*\""
+	eval $*
+	osascript -e "display notification \"$*\" with title \"$*\""
 }
 
-# # update systems
-# function updatesys() {
-# 	if [ -z $1 ]
-# 		then
-# 		if [ "$OS" == "Darwin" ]
-# 			then
-# 			echo "Updating…"
-# 			brew update
-# 			echo "Upgrading…"
-# 			brew upgrade
-# 		else
-# 			sudo apt-get update
-# 			sudo apt-get -u upgrade
-# 		fi
-# 	else
-# 		ssh $1 -t sudo apt-get update
-# 		local dummy
-# 		ssh $1 -t sudo apt-get --no-act upgrade
-# 		echo -n "Process the upgrade ?"
-# 		read -q dummy
-# 		if [[ $dummy = "y" ]]
-# 			then
-# 			ssh $1 -t sudo apt-get -u upgrade --yes
-# 		fi
-# 	fi
-# }
+## update systems
+#function updatesys() {
+#if [ -z $1 ]
+#		then
+#		if [ "$OS" == "Darwin" ]
+#			then
+#			echo "Updating…"
+#			brew update
+#			echo "Upgrading…"
+#			brew upgrade
+#		else
+#			sudo apt-get update
+#			sudo apt-get -u upgrade
+#		fi
+#	else
+#		ssh $1 -t sudo apt-get update
+#		local dummy
+#		ssh $1 -t sudo apt-get --no-act upgrade
+#		echo -n "Process the upgrade ?"
+#		read -q dummy
+#		if [[ $dummy = "y" ]]
+#			then
+#			ssh $1 -t sudo apt-get -u upgrade --yes
+#		fi
+#	fi
+#}
