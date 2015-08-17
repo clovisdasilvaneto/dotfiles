@@ -67,6 +67,7 @@ installcask dash
 installcask imagealpha
 installcask imageoptim
 installcask iterm2
+installcask jumpcut
 installcask keepingyouawake
 installcask launchrocket
 installcask miro-video-converter
