@@ -26,6 +26,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " git gutter sidebar
 Plugin 'vim-gitgutter'
 
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'scrooloose/syntastic' 
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -50,6 +53,7 @@ colorscheme Tomorrow-Night-Eighties
 
 set number
 set ruler
+set nowrap
 set cursorline
 set laststatus=2
 set nostartofline
@@ -81,7 +85,6 @@ set shortmess=atI
 
 set noequalalways
 set autoread
-
 
 set wildmenu
 set wildmode=longest,list:longest
