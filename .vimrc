@@ -98,3 +98,4 @@ set gdefault
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+Bundle 'wakatime/vim-wakatime'
