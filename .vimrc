@@ -96,6 +96,10 @@ set incsearch
 set hlsearch
 set gdefault
 
+" keep cursor centered
+set scrolloff=5
+set so=999
+
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 Bundle 'wakatime/vim-wakatime'
