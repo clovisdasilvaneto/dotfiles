@@ -29,6 +29,10 @@ Plugin 'vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/syntastic' 
 
+Plugin 'kchmck/vim-coffee-script' 
+Plugin 'mxw/vim-jsx'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -48,7 +52,7 @@ filetype plugin indent on    " required
 " /VUNDLE CONFIG
 " ==================================================
 
-syntax on
+syntax enable
 colorscheme Tomorrow-Night-Eighties
 
 set number

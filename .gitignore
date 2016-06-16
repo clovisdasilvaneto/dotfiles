@@ -18,3 +18,4 @@ node_modules
 
 # vim bundles
 .vim/bundle
+bin/update_ms_db.sh
