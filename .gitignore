@@ -18,5 +18,8 @@ node_modules
 
 # vim bundles
 .vim/bundle
+.vim/.netrwhist
+
+# bin scripts / work stuff
 bin/update_ms_db.sh
 bin/mailgen.js
