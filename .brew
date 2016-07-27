@@ -36,6 +36,7 @@ brew install hub
 
 # Install other useful binaries
 brew install ack
+brew install chruby
 brew install the_silver_searcher
 brew install git
 brew install htop
@@ -44,8 +45,8 @@ brew install lynx
 brew install node
 brew install pigz
 brew install rename
-brew install rbenv
 brew install rhino
+brew install ruby-install
 brew install tree
 brew install webkit2png
 brew install tig
