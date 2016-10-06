@@ -7,6 +7,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
+alias ag="ag --stats"
 alias be="bundle exec"
 alias bo="bundle open"
 alias ccat="pygmentize -g"
