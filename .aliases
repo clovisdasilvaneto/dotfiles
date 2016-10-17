@@ -50,6 +50,7 @@ alias gd="git diff"
 gdv() { git diff -w "$@" | view - }
 alias gdt="git difftool"
 alias gc="git commit -v -S"
+alias gci="git commit -v"
 alias gc!="git commit -v --amend"
 alias gca="git commit -v -a"
 alias gca!="git commit -v -a --amend"
