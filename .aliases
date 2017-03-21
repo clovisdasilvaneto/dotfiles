@@ -28,7 +28,6 @@ alias lol="lolcommits -c"
 alias m="open -a mou"
 alias metal='curl -s http://berlinmetal.lima-city.de | grep "<p class=\"konzerte\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"''
 alias v="vim"
-alias s="open -a Sublime\ Text"
 alias rc="rails console"
 alias t="trash"
 alias today="cal | grep -C6 --color \"$(date +%e)\""
