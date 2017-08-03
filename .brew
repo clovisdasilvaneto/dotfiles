@@ -43,6 +43,7 @@ brew install htop
 brew install imagemagick
 brew install lynx
 brew install node
+brew install pick
 brew install pigz
 brew install rename
 brew install rhino
