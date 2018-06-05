@@ -6,14 +6,14 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# marley spoon
-alias psql1="psql marley_spoon_development"
+# n26
+alias n26="n26-testing-cli"
+alias agn="ag --ignore-dir tmp --ignore-dir vendor --ignore-dir node_modules --ignore-dir bower_components"
 
 # Shortcuts
 alias ag="ag --stats"
 alias be="bundle exec"
 alias bo="bundle open"
-alias ccat="pygmentize -g"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dev="cd ~/dev"
@@ -25,15 +25,14 @@ alias h="history"
 alias isup="is-up"
 alias j="jobs"
 alias lol="lolcommits -c"
-alias m="open -a mou"
-alias metal='curl -s http://berlinmetal.lima-city.de | grep -a "<p class=\"konzerte\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"' | pick'
+alias metal='curl -s https://berlinmetal.lima-city.de | grep -a "<p class=\"konzerte\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"' | pick'
+alias npmr="npm run"
 alias v="vim"
 alias rc="rails console"
 alias t="trash"
 alias today="cal | grep -C6 --color \"$(date +%e)\""
 alias o="open"
 alias oo="open ."
-alias pow="powder"
 alias v="vagrant"
 
 # git aliases
@@ -60,6 +59,7 @@ alias gcm="git checkout master"
 alias gr="git remote"
 alias grv="git remote -v"
 alias grmv="git remote rename"
+alias gpreq="git pull-request"
 alias grrm="git remote remove"
 alias grset="git remote set-url"
 alias grup="git remote update"
