@@ -66,20 +66,14 @@ function installcask() {
 }
 
 installcask audacity
-installcask cloudup
-installcask dash
-installcask gitify
 installcask imagealpha
 installcask imageoptim
 installcask iterm2
-installcask jumpcut
 installcask keepingyouawake
 installcask launchrocket
-installcask miro-video-converter
 installcask skype
 installcask the-unarchiver
 installcask tor-browser
-installcask transmission
 installcask virtualbox
 installcask vlc
 
