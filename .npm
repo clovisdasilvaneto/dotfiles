@@ -1,3 +1,4 @@
 npm install --global trash-cli
 npm install --global is-up-cli
 npm install --global fkill-cli
+npm install --global alfred-lock
