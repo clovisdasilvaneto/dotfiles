@@ -8,7 +8,7 @@ alias -- -="cd -"
 
 # n26
 alias n26="n26-testing-cli"
-alias agn="ag --ignore-dir tmp --ignore-dir vendor --ignore-dir node_modules --ignore-dir bower_components"
+alias agn="ag --ignore-dir tmp --ignore-dir vendor --ignore-dir node_modules --ignore-dir"
 
 # Shortcuts
 alias ag="ag --stats"
@@ -20,12 +20,13 @@ alias dev="cd ~/dev"
 alias f="find . -name"
 alias fa="ag -a --hidden"
 alias git="hub"
-alias gpo="gp origin"
+alias gpo="gp origin $(git branch | sed -n -e 's/^\* \(.*\)/\1/p')"
 alias h="history"
 alias isup="is-up"
 alias j="jobs"
 alias lol="lolcommits -c"
 alias metal='curl -s https://berlinmetal.lima-city.de | grep -a "<p class=\"konzerte\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"' | pick'
+alias podewil='curl -s http://www.podewil-restaurant.de | grep -a "<p class=\"p f10\">\|<span class=\"f9\">\|<p class=\"p f8\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"''
 alias npmr="npm run"
 alias v="vim"
 alias rc="rails console"
@@ -134,8 +135,8 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
 # Canonical hex dump; some systems have this symlinked
 command -v hd > /dev/null || alias hd="hexdump -C"
@@ -196,10 +197,6 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
 done
 
-# Make Grunt print stack traces by default
-command -v grunt > /dev/null && alias grunt="grunt --stack"
-
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
