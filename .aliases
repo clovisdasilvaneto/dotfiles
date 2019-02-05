@@ -7,8 +7,8 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # n26
-alias n26="n26-testing-cli"
 alias agn="ag --ignore-dir tmp --ignore-dir vendor --ignore-dir node_modules --ignore-dir"
+alias podewil='curl -s http://www.podewil-restaurant.de | grep -a -E "<p class=\"p[1-2]? f1[0-2]\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"''
 
 # Shortcuts
 alias ag="ag --stats"
@@ -26,7 +26,6 @@ alias isup="is-up"
 alias j="jobs"
 alias lol="lolcommits -c"
 alias metal='curl -s https://berlinmetal.lima-city.de | grep -a "<p class=\"konzerte\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"' | pick'
-alias podewil='curl -s http://www.podewil-restaurant.de | grep -a "<p class=\"p f10\">\|<span class=\"f9\">\|<p class=\"p f8\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"''
 alias npmr="npm run"
 alias v="vim"
 alias rc="rails console"
@@ -79,6 +78,7 @@ alias glgg="git log --graph --max-count=10"
 alias glgga="git log --graph --decorate --all"
 alias glo="git log --oneline --decorate --color"
 alias glog="git log --oneline --decorate --color --graph"
+alias gsa="git stash -u"
 alias gss="git status -s"
 alias ga="git add"
 alias gap="git add --patch"
