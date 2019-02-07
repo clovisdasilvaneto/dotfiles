@@ -14,6 +14,7 @@ alias podewil='curl -s http://www.podewil-restaurant.de | grep -a -E "<p class=\
 alias ag="ag --stats"
 alias be="bundle exec"
 alias bo="bundle open"
+alias cat="bat"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dev="cd ~/dev"
