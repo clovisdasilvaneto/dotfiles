@@ -45,6 +45,7 @@ alias gl="git pull"
 alias gu="git fetch --all; git pull"
 alias gup="git pull --rebase"
 alias gp="git push"
+alias gpua="git pull --autostash"
 alias gd="git diff"
 gdv() { git diff -w "$@" | view - }
 alias gdt="git difftool"
