@@ -3,6 +3,11 @@ function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# Show git stats in a repo from specific user name
+function gitwho() {
+    git log --shortstat --author="$@*" | grep -E "fil(e|es) changed" | awk '{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed: ", files, "lines inserted: ", inserted, "lines deleted: ", deleted }'
+}
+
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
 function targz() {
 	local tmpFile="${@%/}.tar"
