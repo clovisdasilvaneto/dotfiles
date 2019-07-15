@@ -3,12 +3,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
-
-# n26
-alias agn="ag --ignore-dir tmp --ignore-dir vendor --ignore-dir node_modules --ignore-dir"
-alias podewil='curl -s http://www.podewil-restaurant.de | grep -a -E "<p class=\"p[1-2]? f1[0-2]\">" | awk -F '"'"'[<>]'"'"' '"'"'{print $3 $5}'"'"''
 
 # Shortcuts
 alias ag="ag --stats"
