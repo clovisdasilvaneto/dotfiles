@@ -30,6 +30,7 @@ alias today="cal | grep -C6 --color \"$(date +%e)\""
 alias o="open"
 alias oo="open ."
 alias v="vagrant"
+alias wt="curl -4 http://v2.wttr.in"
 
 # git aliases
 alias g="git"
