@@ -30,6 +30,7 @@ alias today="cal | grep -C6 --color \"$(date +%e)\""
 alias o="open"
 alias oo="open ."
 alias v="vagrant"
+alias y="yarn"
 
 # git aliases
 alias g="git"
@@ -152,6 +153,9 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # ROT13-encode text. Works for decoding, too! ;)
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
+
+# local server with live-reload
+alias serve="npx browser-sync start -s -f . --no-notify --directory --port 8888"
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
