@@ -31,6 +31,7 @@ alias o="open"
 alias oo="open ."
 alias v="vagrant"
 alias y="yarn"
+alias wt="curl -4 http://v2.wttr.in"
 
 # git aliases
 alias g="git"
